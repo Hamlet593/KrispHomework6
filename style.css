@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+:root {
+	--body: hsl(0, 0%, 98%);
+}
+
+h1 {
+	margin: auto;
+}
+
+body {
+	background-color: var(--body);
+	color: hsl(200, 15%, 8%);
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+	position: relative;
+}
+
+.search {
+	border-radius: 8px;
+	border: 1px solid black;
+	font-size: 15px;
+	padding: 25px;
+	margin: auto;
+	min-width: 350px;
+}
+
+.card {
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 40px;
+	max-width: 100%;
+	width: 300px;
+}
+
+.card img {
+	object-fit: cover;
+	height: 200px;
+	width: 100%;
+}
+
+.card-body {
+	padding: 30px;
+}
+
+.container.countries {
+	justify-content: center;
+}
+
+/* Modal Styling */
+.modal {
+	background-color: var(--body);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.modal img {
+	max-width: 300px;
+}
+
+.modal-body {
+	padding: 30px;
+}
+
+.btn-close {
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
